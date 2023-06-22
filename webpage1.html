@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +9,65 @@
     <title>webpage1</title>
     <style>
         .navbar{
-            height:100px;
+            height:60px;
             width:100%;
             display: flex;
             background-color: aqua;
             justify-content: space-between;
         }
-        ul.navbar0{
+        .navbar0_0{
             list-style-type:none;
-            display: flex;
             width:100%;
+            width:25%
         }
-        ul.navbar0 li{
-            float:left;
-            padding:1%;
+        .TuTangle{
+            font-size: 40px;
         }
-        .gap{
-            list-style-type: none;
+        .TuTangle_logo{
+            display: none;
+        }
+        @media(max-width:480px){
+            .navbar{
+                background-color: green;
+                width:auto;
+                height:25px;
+                border-radius: 5px;
+            }
+            .TuTangle{
+                display: none;
+            }
+            .TuTangle_logo{
+                display: block;
+            }
+        }
+        .navbar0_1{
+            display: flex;
+            align-items: center;
+            width:50%;
         }
         .search_div{
             display: flex;
             background-color:rgb(186, 226, 213) ;
             background: linear(to left, rgb(186, 226, 213), transparent);
             border-radius: 10px;
-
         }
         #search{
             height:30px;
             width:300px;
-            border-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
             background-color:rgb(186, 226, 213) ;
             border: none;
         }
-
+        #x_icon{
+            width: 20px;
+            height:30px;
+            display: flex;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            align-items: center;
+            background-color:rgb(186, 226, 213);
+        }
         #search_button{
             width: 50px;
             height:30px;
@@ -51,20 +77,61 @@
             margin-left: 5px;
             border:2px;
         }
-        ul.navbar1 li{
-            list-style-type: none;
-            float:left;
+        @media (max-width:480px){
+            .navbar0_1{
+                justify-content: center;
+            }
+            #search{
+                font-size: 4px;
+                width:80%;
+                height:5px;
+            }
+            #x_icon{
+                font-size: 5px;
+                width:5px;
+                height: 6px;
+            }
+            #search_button{
+                font-size: 4px;
+                width:auto;
+                height:5px;
+            }  
+            
+        }
+        .sajan{
+            width:100%;
             text-align: right;
         }
-        ul.navbar1 li a{
+        .navbar0_2_1_0{
+            display: flex;
+        }
+        .navbar0_2_1_1{
+            display: none;
+        } 
+        .navbar0_2_1_0 a{
             text-decoration: none;
-            padding:5px;
-            text-align: right;
             color:black;
-        }
-        #navbar1_ul_li_a:hover{
+        }              
+        #navbar1_div_a:hover{
             color:blue;
         }
+        @media (max-width:480px){
+            .navbar0_2{
+                width:25%;
+            }
+            .navbar0_2_1_0{
+                display: none;
+            }
+            .navbar0_2_1_1{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2%;
+            }
+            .sajan{
+                display: none;
+            }
+        }
+
         .second_component{
         display: flex;
         justify-content: space-between;
@@ -83,6 +150,12 @@
             color: blue;
             cursor: pointer;
         }
+        @media (max-width:480px){
+            .second_component{
+                font-size: 7px;
+                height:15px;
+            }
+        }
         .third_component{
             display: flex;
             justify-content: space-between;
@@ -96,7 +169,7 @@
 
         }
         .third_ul{
-            list-style-type: none;
+            list-style-type: none;                
             padding: 0%;
             margin:0%;
         }
@@ -115,6 +188,37 @@
         .third_ul li:hover{
             background-color: rgb(6, 233, 221);
         }
+        .third_div0{
+            width:25%;
+
+            background-color: rgb(205, 250, 250);
+
+            border-radius: 10px;
+        }
+        @media (max-width:400px){
+            .third_div0{
+                border-radius: 2px;
+                background-color: rgb(141, 233, 164);
+            }
+            .third_ul{
+                font-size: 10px;
+            }
+            .third_ul li a{
+                font-size: 10px;
+                height:15px;
+            }
+            .third_ul li{
+                border-radius: 2px;
+                background-color: rgb(141, 233, 164);
+            }
+            #icon_size{
+                font-size: 7px;
+            }
+        }
+
+        .third_hr{
+            border-top: 1px solid blue;
+        }
         .third_mid_ul{
             list-style-type: none;
         }
@@ -123,18 +227,7 @@
             margin-top: 30px;
             display: flex;
         }
-        .third_div0{
-            width:25%;
-            overflow: auto;
-            height:100%;
-            background-color: rgb(205, 250, 250);
 
-            border-radius: 10px;
-        }
-
-        .third_hr{
-            border-top: 1px solid blue;
-        }
         .third_mid0{
             background-color: aliceblue ;
             width:49%;
@@ -172,42 +265,76 @@
         #mid_img{
             width:100%;
             height:100%
+        }     
+        #third_ul_topic{
+            background-color:rgb(17, 198, 243)
         }
         .div_mid_img{
             width:10%;
             height:10%;
-            margin-right:2%
+            margin-right:2%;
+        }
+        @media(max-width:400px){
+            .third_div_0{
+                font-size: 8px;
+            }
+            .third_mid0{
+                font-size: 10px;
+            }
+            #third_button{
+                font-size: 4.5px;
+                height:15px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .third_mid_ul{
+                margin:0%;
+                padding:5%;
+            }
+            .third_mid_ul li{
+                margin:5%;
+                font-size: 7px;
+
+            }
+            #third_ul_topic{
+                background-color: rgb(58, 231, 43);
+            }
         }
     </style>
+
 </head>
-<body>
+<body style="height: 100%;">
 <nav class="navbar">
-    <ul class="navbar0">
-    <li style="font-size:40px;width:25%">TuTangle</li>
-    <li style="width:50%">
-            <ul class="gap">
-                <li style="height:0px;"></li>
-                <li>
-                    <div class="search_div">
-                        <input id="search" placeholder="search your subject" >
-                        <i class="fas fa-times search-icon" style="margin-top:3px"></i>
-                        <button id="search_button"> search</button>
-                    </div>
-                </li>
-            </ul> 
-    </li>
-    <li style="width:25%">
-    <div style="display:flex;margin-right:auto;width:300px">
-        <ul class="navbar1">
-        <li>sajan shrestha</li>
-        <li>
-            <a href="#Home" id="navbar1_ul_li_a">Home</a>|
-            <a href="#Setting" id="navbar1_ul_li_a">Setting</a>|
-            <a href="Logout" id="navbar1_ul_li_a">Logout</a>
-        </li>
-        </ul>
-    </div></li>
-    </ul>
+    <div class="navbar0_0">
+        <span class="TuTangle">TuTangle</span>
+        <span class="TuTangle_logo"><img src="logo.png" style="width:25px;height:25px"></span>
+    </div>
+    <div class="navbar0_1">
+        <input id="search" placeholder="search your subject" >
+        <i class="fas fa-times search-icon" id="x_icon"></i>
+        <button id="search_button"> search</button>
+    </div>
+    <div class="navbar0_2">
+        <div class="sajan">
+            sajan shrestha
+        </div>
+        <div class="navbar0_2_1">
+            <div class="navbar0_2_1_0">
+            <a href="#Home" id="navbar1_div_a">Home</a>|
+            <a href="#Home" id="navbar1_div_a">setting</a>|
+            <a href="#Home" id="navbar1_div_a">about</a>
+            </div>
+            <div class="navbar0_2_1_1">
+                <a href="#home" id="navbar1_div_a_icon">
+                <i class="fas fa-home" id="icon_size"></i></a>
+                <a href="#home" id="navbar1_div_a_icon">
+                 <i class="fa fa-gear" id="icon_size"></i></a>
+                <a href="#home" id="navbar1_div_a_icon">
+                <i class="fas fa-info-circle" id="icon_size"></i> </a>
+            </div>
+
+        </div>
+    </div>
 </nav>
 
 
@@ -228,12 +355,13 @@
     <div class="third_div0">
         <div>
             <ul class="third_ul">
-                <li style="background-color:rgb(17, 198, 243)"><a href="webpage1.html" >semister1</a></li>
+                <li  id="third_ul_topic"><a href="webpage1.html" >semister1</a></li>
             </ul>
         <ul class="third_ul">
-            <li>
+            <li >
                 <a href="webpage1.html" style="width:98%">Chemistry</a> 
-                <a href="webpage1.html"><i class="fas fa-download"></i> </a>
+                <a href="webpage1.html" >
+                    <i id="icon_size" class="fas fa-download"></i> </a>
             </li>
             <li><a href="webpage1.html">biology</a></li>
             <li><a href="webpage1.html">basic elctronic</a></li>
@@ -247,11 +375,12 @@
         </div>
         <div>
             <ul class="third_ul">
-                <li style="background-color:rgb(17, 198, 243)"><a href="webpage1.html" >semister2</a></li>
+                <li id="third_ul_topic" ><a href="webpage1.html" >semister2</a></li>
             </ul>
             <ul class="third_ul">
-                <li><a href="webpage1.html" style="width:98%">Physics</a> 
-                   <div style="font-size: 20px; line-height: 1;display:flex">&#9776;</div>
+                <li ><a href="webpage1.html" style="width:98%">
+                    Physics</a> 
+                    <i id="icon_size" class="fas fa-bars"></i>
                 </li>
 
                 <li><a href="webpage1.html">Mathematics</a></li>
@@ -266,7 +395,7 @@
 
 
 
-    <div style="width:49%">
+    <div style="width:49%" class="third_div_0">
         <h2>Entries</h2>
         <div class="third_entries">
             <div class="third_mid0">
@@ -347,7 +476,7 @@
 
     <div class="third_div0">
         <ul class="third_ul">
-            <li style="background-color:rgb(17, 198, 243)"><a href="webpage1.html" >semister2</a></li>
+            <li   id="third_ul_topic" ><a href="webpage1.html" >semister2</a></li>
         </ul>
         <ul class="third_ul">
             <li><a href="webpage1.html">Physics</a></li>
@@ -367,7 +496,7 @@
             <li><a href="webpage1.html">basic mechanics</a></li>     
              <li><a href="webpage1.html">Physics</a></li>
             <li><a href="webpage1.html">Mathematics</a></li>
-            <li><a href="webpage1.html">basic mechanics</a></li>       c
+            <li><a href="webpage1.html">basic mechanics</a></li>       
         </ul>
     </div>
 </div>
