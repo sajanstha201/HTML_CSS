@@ -84,6 +84,7 @@ h5{
     color:blue;
 }
 .second_navbar ul {
+margin:0%;
 list-style-type:none;
 display:flex;
 justify-content: space-between;
@@ -131,14 +132,13 @@ color: black;
     margin:0%;
 }
 .list li{
+    padding:12px;
     font-size: 20px;
     padding-left:5%;
     display: flex;
-    align-items: center;
     border-radius: 5px;
 }
 .list li a{
-    height:40px;
     text-decoration: none;
     color:black;
 }
@@ -234,6 +234,9 @@ color: black;
         margin:0%;
         float:left;
     }
+    .navbar_right_low{
+        padding: 0%;
+    }
     .navbar_right_max{
         display: none;
     }
@@ -266,6 +269,9 @@ color: black;
         margin:5px;
         font-size: 6px;
     }
+    .entries{
+        border-radius: 1px;
+    }
     .third_div_mid{
         font-size: 4px;
     }
@@ -286,5 +292,12 @@ color: black;
     .mid_ul li{
         margin:5%;
         font-size: 5px;
+    }
+    .list li{
+        height:5px;
+        padding:2px;
+    }
+    .list li a{
+        font-size: 4px;
     }
 }
